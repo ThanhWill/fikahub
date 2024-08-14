@@ -15,23 +15,23 @@ interface Hero2DataType {
 export const HERO2_DEMO_DATA: Hero2DataType[] = [
   {
     image: imageRightPng2,
-    heading: "Exclusive collection for everyone",
-    subHeading: "In this season, find the best 🔥",
-    btnText: "Explore now",
-    btnLink: "/",
+    heading: 'Coffee crafted by Engineers for Engineers',
+    subHeading: 'Made by folks who understand what you need',
+    btnText: 'Discover Your Perfect Blend',
+    btnLink: '/'
   },
   {
     image: imageRightPng3,
-    heading: "Exclusive collection for everyone",
-    subHeading: "In this season, find the best 🔥",
-    btnText: "Explore now",
-    btnLink: "/",
+    heading: 'Exclusive collection for everyone',
+    subHeading: 'Made by folks who understand what you need',
+    btnText: 'Explore now',
+    btnLink: '/'
   },
   {
     image: imageRightPng,
-    heading: "Exclusive collection for everyone",
-    subHeading: "In this season, find the best 🔥",
-    btnText: "Explore now",
-    btnLink: "/",
-  },
+    heading: 'Exclusive collection for everyone',
+    subHeading: 'In this season, find the best 🔥',
+    btnText: 'Explore now',
+    btnLink: '/'
+  }
 ];

@@ -183,37 +183,19 @@ const OTHER_PAGE_CHILD: NavItemType[] = [
 export const NAVIGATION_DEMO_2: NavItemType[] = [
   {
     id: ncNanoId(),
-    href: "/collection",
-    name: "Men",
+    href: '/collection',
+    name: 'Shop'
   },
   {
     id: ncNanoId(),
-    href: "/collection-2",
-    name: "Women",
+    href: '/collection-2',
+    name: 'About'
   },
   {
     id: ncNanoId(),
-    href: "/collection",
-    name: "Beauty",
-  },
-
-  {
-    id: ncNanoId(),
-    href: "/collection-2",
-    name: "Sport",
-  },
-  {
-    id: ncNanoId(),
-    href: "/collection",
-    name: "Templates",
-    type: "megaMenu",
-    children: MEGAMENU_TEMPLATES,
-  },
-  {
-    id: ncNanoId(),
-    href: "/search",
-    name: "Explore",
-    type: "dropdown",
-    children: OTHER_PAGE_CHILD,
-  },
+    href: '/search',
+    name: 'More',
+    type: 'dropdown',
+    children: OTHER_PAGE_CHILD
+  }
 ];

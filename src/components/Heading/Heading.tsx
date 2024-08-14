@@ -38,38 +38,37 @@ const Heading: React.FC<HeadingProps> = ({
 }) => {
   return (
     <div
-      className={`nc-Section-Heading relative flex flex-col sm:flex-row sm:items-end justify-between ${className}`}
-    >
+      className={`nc-Section-Heading relative flex flex-col sm:flex-row sm:items-end justify-between ${className}`}>
       <div
         className={
           isCenter
-            ? "flex flex-col items-center text-center w-full mx-auto"
-            : ""
-        }
-      >
+            ? 'flex flex-col items-center text-center w-full mx-auto'
+            : ''
+        }>
         <h2
-          className={`${isCenter ? "justify-center" : ""} ${fontClass}`}
-          {...args}
-        >
+          className={`${isCenter ? 'justify-center' : ''} ${fontClass}` }
+          {...args}>
           {children || `Section Heading`}
-          {rightDescText && (
-            <>
-              <span className="">{`. `}</span>
-              <span className="text-neutral-500 dark:text-neutral-400">
-                {rightDescText}
-              </span>
-            </>
-          )}
         </h2>
+        {rightDescText && (
+          <>
+            <p className='text-black-400 dark:text-neutral-400 w-[80%] mt-3'>
+              {rightDescText}
+            </p>
+          </>
+        )}
         {!!desc && (
-          <span className="mt-2 md:mt-3 font-normal block text-base sm:text-xl text-neutral-500 dark:text-neutral-400">
+          <span className='mt-2 md:mt-3 font-normal block text-base sm:text-xl text-neutral-500 dark:text-neutral-400'>
             {desc}
           </span>
         )}
       </div>
       {hasNextPrev && !isCenter && (
-        <div className="mt-4 flex justify-end sm:ms-2 sm:mt-0 flex-shrink-0">
-          <NextPrev onClickNext={() => {}} onClickPrev={() => {}} />
+        <div className='mt-4 flex justify-end sm:ms-2 sm:mt-0 flex-shrink-0'>
+          <NextPrev
+            onClickNext={() => {}}
+            onClickPrev={() => {}}
+          />
         </div>
       )}
     </div>
